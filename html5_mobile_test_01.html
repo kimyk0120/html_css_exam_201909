@@ -22,7 +22,15 @@
         #main_header > a.left {background: url('sprites.png');background-position: 0px 0px;
             text-indent: -9999px;}
         #main_header > label.right {background: url('sprites.png');background-position: -62px 0px;
-            text-indent: -99999px;}                
+            text-indent: -99999px;}    
+        /* toggle */
+        #toggle {display: none;}
+        #toggle + #wrap > #toggle_gnb_wrap {display: none;}
+        #toggle:checked + #wrap > #toggle_gnb_wrap {display: block;}     
+        #toggle_gnb_wrap {background: #363636;padding: 15px;}
+        #toggle_gnb {background: #ffffff; padding: 5px;}
+        #toggle_gnb > ul {overflow: hidden;}
+        #toggle_gnb > ul > li {width: 80px; float: left;}
     </style>    
 </head>
 <body>
