@@ -31,7 +31,14 @@
         #toggle_gnb {background: #ffffff; padding: 5px;}
         #toggle_gnb > ul {overflow: hidden;}
         #toggle_gnb > ul > li {width: 80px; float: left;}
-    </style>    
+        /* navigation */
+        #top_gnb {overflow: hidden; border-bottom: 1px solid black; background:#b42111;}
+        #top_gnb > div > a {float: left; width: 25%; height: 35px; line-height:35px; 
+            text-align: center; color: white;}
+        #bottom_gnb {display: table; width: 100%;}
+        #bottom_gnb > div {display: table-cell;}
+        #bottom_gnb > div > a {display: block; height: 35px; line-height: 35px; text-align: center;}
+    </style>     
 </head>
 <body>
     <input id="toggle" type="checkbox" />
@@ -55,6 +62,19 @@
                 </ul>
             </div>
         </div>
+        <nav id="top_gnb">
+            <div><a href="#">btn</a></div>
+            <div><a href="#">btn</a></div>
+            <div><a href="#">btn</a></div>
+            <div><a href="#">btn</a></div>
+        </nav>
+        <nav id="bottom_gnb">
+            <div><a href="#">btn</a></div>
+            <div><a href="#">btn</a></div>
+            <div><a href="#">btn</a></div>
+            <div><a href="#">btn</a></div>
+            <div><a href="#">btn</a></div>
+        </nav>
     </div>
 </body>
 </html>
