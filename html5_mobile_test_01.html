@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chapter6</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, 
+        user-scalable=no" />    
+    <style>
+        /* init */
+        * {margin: 0;padding: 0; }
+        body {font-family: Arial, Helvetica, sans-serif;}
+        li {list-style: none;}
+        a {text-decoration: none;}
+        /* header */
+        #main_header {height: 45px; background: url('header_background.png');
+            position: relative;text-align: center;line-height: 45px;}        
+        #main_header > h3 {color: white;}
+        #main_header > a, #main_header > label {display: block;height: 32px;position: absolute;}
+        #main_header > a.left {width: 62px;left: 5px; top: 7px;}
+        #main_header > label.right {width: 32px;right: 5px;top: 7px;}
+        /* sprite img */
+        #main_header > a.left {background: url('sprites.png');background-position: 0px 0px;
+            text-indent: -9999px;}
+        #main_header > label.right {background: url('sprites.png');background-position: -62px 0px;
+            text-indent: -99999px;}                
+    </style>    
+</head>
+<body>
+    <input id="toggle" type="checkbox" />
+    <div id="wrap">        
+        <header id="main_header">
+            <a class="left" href="#" >Main</a>
+            <h3>Mobile</h3>
+            <label class="right" for="toggle">Toggle</label>
+        </header>
+        <div id="toggle_gnb_wrap">
+            <div id="toggle_gnb">
+                <ul>
+                    <li><a href="#">btn</a></li>
+                    <li><a href="#">btn</a></li>
+                    <li><a href="#">btn</a></li>
+                    <li><a href="#">btn</a></li>
+                    <li><a href="#">btn</a></li>
+                    <li><a href="#">btn</a></li>
+                    <li><a href="#">btn</a></li>
+                    <li><a href="#">btn</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

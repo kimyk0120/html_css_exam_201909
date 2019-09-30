@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <title>css3PropertyBasic</title>
+    <style>
+        :root{--mycolor-1:red;}
+        body{width: 960px;margin: 0 auto;} 
+        #aside{width: 200px;float: left;}
+        #section{width: 760px;float: left;}
+        #wrap{overflow: hidden;}
+        .txtshdw{text-shadow: 5px 5px 5px black;color: var(--mycolor-1);}
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1 class="txtshdw">header</h1>
+    </div>
+    <div id="navigation">
+        <h3>navigation</h3>
+    </div>
+    <div id="wrap">
+        <div id="aside">
+            <h3>aside</h3>
+            <p class="loremIpsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div id="section">
+            <h3>section</h3>
+            <p class="loremIpsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>        
+    </div>
+    <div id="footer">
+        <h3>footer</h3>
+    </div>
+<script>
+        var el = document.getElementById("header");
+        console.log(el);
+        el.style.cssText = "--mycolor-1:blue;";        
+</script>
+</body>
+</html>
